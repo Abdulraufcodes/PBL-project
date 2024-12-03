@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Car Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .faq-item {
+            margin: 15px 0;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+        }
+    </style>
+    <script>
+        function toggleAnswer(event) {
+            const answer = event.target.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="cars.html">Cars</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+        <h2>Common Questions</h2>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(event)">1. What types of cars do you cover?</div>
+            <div class="answer">We cover a wide range of cars including sedans, SUVs, trucks, and electric vehicles.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(event)">2. How often do you update your reviews?</div>
+            <div class="answer">Our reviews are updated regularly to reflect the latest information and market trends.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(event)">3. Can I contribute to the website?</div>
+            <div class="answer">Yes! We welcome contributions from our community. Please contact us for more details.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(event)">4. Do you have a mobile app?</div>
+            <div class="answer">Currently, we do not have a mobile app, but our website is mobile-friendly.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(event)">5. How can I contact you for further questions?</div>
+            <div class="answer">You can reach us through our contact page or email us at info@carinformation.com.</div>
+        </div>
+    </div>
+
+    <footer>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Car Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="cars.html">Cars</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div class="content">
+        <h2>Our Gallery</h2>
+        <div class="gallery">
+            <img src="https://example.com/car1.jpg" alt="Car Image 1">
+            <img src="https://example.com/car2.jpg" alt="Car Image 2">
+            <img src="https://example.com/car3.jpg" alt="Car Image 3">
+            <img src="https://example.com/car4.jpg" alt="Car Image 4">
+            <img src="https://example.com/car5.jpg" alt="Car Image 5">
+            <img src="https://example.com/car6.jpg" alt="Car Image 6">
+            <img src="https://example.com/car7.jpg" alt="Car Image 7">
+            <img src="https://example.com/car8.jpg" alt="Car Image 8">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Car Information. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
